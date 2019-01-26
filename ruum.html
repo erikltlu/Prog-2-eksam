@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Manguruumid</title>
+
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+
+        #del-game {
+            margin-right: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <a href="index.html">Ruumid</a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-sm-12">
+                <input type="text" id="bet-amount" class="money" placeholder="Enter the bet amount">
+                <button id="join-game" class="btn btn-success">Join Game</button>
+                <div id="status"></div>
+                <br>
+                <div id="game-container">
+                    <h1 id="win"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    <script src="ruum.js"></script>
+</body>
+</html>
